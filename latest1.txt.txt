@@ -1,0 +1,154 @@
+Welcome to GitHub Training
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:05 PM: If you want to bring up those slides now or later, they are at https://training.github.com/kit/foundations
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:06 PM: If you want to load up the Atom text editor, it is at: https://atom.io
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:16 PM: Bilal asked: "Can we add JIRA issues to GitHub?" - GitHub supports a smart connection to JIRA that lets you track what Pull Requests and commits relate to that JIRA issue: https://help.github.com/articles/integrating-jira-with-your-projects/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:18 PM: Juan Carlos asked: "Do I have to click Sync on the desktop client to see all remote changes?" That's correct Juan Carlos. Since Git is a distributed version control system, it means that you can sync when you have network and still work offline (with full history) when you aren't connected.  Sync pushes and pulls changes to sync them with GitHub.com or your GitHub Enterprise (on-premise) instance.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:19 PM: Srinivasan asked: "Is there a way to see how many things will be synced?" -> Yes. The button in GitHub for Mac and Windows should have a number on it if it has polled GitHub.com (every few minutes).  Otherwise, if you just sync, it'll sync even if the number doesn't show how many commits.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:22 PM: Parthiv asked: "Is Master a default branch?" -> Correct. Master is like "trunk" in Subversion. It is the default branch created on every new repo. It doesn't have any special priviledges, but is often considered the "shipping" copy of code. At GitHub Engineering, we try to keep the master branch able to build and pristine at all times.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:24 PM: For those of you that want to download Atom after class, just browse over to https://atom.io
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:29 PM: Gerhard asked: "Can a branch be used for versions like 1.2 and 1.3" -> Indeed they can. Branches typically represent a version of code – even a small maintenance release like 1.2.2.  Branches can also be more humanely named like "add-sales-demo-mode" and then merged into a numbered version branch.  Any branch can be merged into any other branch.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:30 PM: Rémi asked: "Do you fork on your local laptop?" -> Forking is done on the server side.  It's effectively a server-side copy of the entire repository to your personal account to allow you to safely make changes in a "sandbox"
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:31 PM: Sophia asked: "Who is handling pull requests?" -> Any of the collaborators (write access) on the destination of the pull request can merge it in.  Anyone who has read access can comment on the pull request.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:34 PM: Dorian asked "Can you import a repository that is not visible on the Internet?" -> You can with a couple of tools.  If it is Subversion, you can use the `git svn clone --stdlayout <URL>` command - http://git-scm.com/docs/git-svn
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:35 PM: Continuing the response to Dorian regarding imports, there is also a CVS importing tool <http://git-scm.com/docs/git-cvsimport> and additional ones for ClearCase and Perforce.
+
+
+
+Q: pvcs aswell?
+
+
+Matthew McCullough (to All - Entire Audience):
+1:39 PM: Parthiv asked about "merging pull requests from the web versus from the desktop" -> Merging from the Web UI (pull request page) gives you all the context.  Merging from the desktop (editor) is possible and also will close the pull request automatically once pushed.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:41 PM: Prasad: Regarding conversions: PVCS to Git is a more challenged conversion since PVCS is a bit before the timeline of systems that get converted to Git.  I have personally only helped in conversions from ClearCase, Perforce, CVS, Subversion, and TFS.  I only have one article in my bookmarks on PVCS to Git: http://git.661346.n2.nabble.com/Migrating-from-Serena-PVCS-to-GIT-td4391419.html
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:44 PM: Srinivasan asked: "Are there GitHub Wizards to walk us through like Microsoft Wizards for different programming languages?" -> You'll find a lot of example projects that give a great starting point, but they aren't quite wizards like those found in the Microsoft tools.  You can still use your existing Wizard capabilities of Microsoft IDEs and then just upload that resultant project as a GitHub project by initializing it as a Git repo and syncing.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:46 PM: Mohamed asked: "Is there an integration with a continuous integration system like Hudson?" -> There is indeed.  GitHub has the most integrations with CI systems of any version control platform today.  You'll find, on the settings page for each repo, a "Services and Webhooks" page where these integrations are set up.  In fact, many tools, like CloudBees (Jenkins), TravisCI, and Circle CI make this a one-click setup to start builds and have it watch changes to the repo.  The results will be shown automatically at the end of every pull request page.  For example: https://github.com/rails/rails/pull/18613 where you see "All is well"
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:49 PM: Sarah asked: "How often do you push in a typical workflow?" -> I tend to push very frequently. Every 15 minutes or so is not uncommon for me.  But I try to work in a paired environment where a partner is waiting for my changes, ready to sync them down.  I like that mode of working.  I commit in "logical chunks" and then push after I have a few logical chunks.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:53 PM: https://github.com/githubschool/recipes/pull/203
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:08 PM: Sophia asked: "Any UI tool for merges that you recommend?" -> Git integrates with just about merge tool via the `mergetool` command. http://git-scm.com/docs/git-mergetool  My favorites include Kalaidoscope, Araxis, Open Diff, Meld, and Beyond compare.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:09 PM: Steve asked about the "This branch is 1 commit ahead, 14 commits behind" -> That tells you that you've made one additional contribution since you branched and that 14 commits have been merged in since you branched.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:10 PM: Steve: To get it up to date, you'd merge in the origin/master or whereever you branched from.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:17 PM: Suresh asked about the Eclipse plugin and Git + GitHub -> The Eclipse support for Git is super solid. The Eclipse foundation switched over to using Git as their default version control system and the eGit plugin is shipped with most of the distribution of Eclipse.  There is an additional Mylin plugin that adds GitHub specific support for Issues and Pull Requests: http://eclipse.github.io/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:18 PM: Steve: I've got you covered with an article the docs team and I wrote up.  Keeping a fork up to date is easy with these steps: https://help.github.com/articles/syncing-a-fork/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:19 PM: Sophia asked if we could demo a third party merge tool in future classes: Let me sync up with Joshua on that and see if we can fit it in. :)
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:32 PM: https://help.github.com/articles/syncing-a-fork/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:34 PM: Edwar asked about the integration with Visual Studio 2010 and earlier - VS 2012 is when the integration got formal and from Microsoft.  2013 it went into the core.  2015 it is getting even more feature-laden.  For the earlier versions of Visual Studio, it is easier to use an external tool like GitHub for Windows to do the Git operations.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:34 PM: Juan Carlos - Yes. The write priviledge lets you merge a Pull Request into a repo.  Read lets you submit ones and comment on them.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:35 PM: Martin also shared the configuration article for forks: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:35 PM: Bilal - There is indeed a web UI for viewing forks. It is on the Graphs -> Network set of links.  I'll have Joshua show it.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+2:36 PM: A great tool for capturing animations of apps: http://www.cockos.com/licecap/

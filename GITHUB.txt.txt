@@ -1,0 +1,101 @@
+Welcome to GitHub Training
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:05 PM: If you want to bring up those slides now or later, they are at https://training.github.com/kit/foundations
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:06 PM: If you want to load up the Atom text editor, it is at: https://atom.io
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:16 PM: Bilal asked: "Can we add JIRA issues to GitHub?" - GitHub supports a smart connection to JIRA that lets you track what Pull Requests and commits relate to that JIRA issue: https://help.github.com/articles/integrating-jira-with-your-projects/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:18 PM: Juan Carlos asked: "Do I have to click Sync on the desktop client to see all remote changes?" That's correct Juan Carlos. Since Git is a distributed version control system, it means that you can sync when you have network and still work offline (with full history) when you aren't connected.  Sync pushes and pulls changes to sync them with GitHub.com or your GitHub Enterprise (on-premise) instance.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:19 PM: Srinivasan asked: "Is there a way to see how many things will be synced?" -> Yes. The button in GitHub for Mac and Windows should have a number on it if it has polled GitHub.com (every few minutes).  Otherwise, if you just sync, it'll sync even if the number doesn't show how many commits.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:22 PM: Parthiv asked: "Is Master a default branch?" -> Correct. Master is like "trunk" in Subversion. It is the default branch created on every new repo. It doesn't have any special priviledges, but is often considered the "shipping" copy of code. At GitHub Engineering, we try to keep the master branch able to build and pristine at all times.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:24 PM: For those of you that want to download Atom after class, just browse over to https://atom.io
+Welcome to GitHub Training
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:05 PM: If you want to bring up those slides now or later, they are at https://training.github.com/kit/foundations
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:06 PM: If you want to load up the Atom text editor, it is at: https://atom.io
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:16 PM: Bilal asked: "Can we add JIRA issues to GitHub?" - GitHub supports a smart connection to JIRA that lets you track what Pull Requests and commits relate to that JIRA issue: https://help.github.com/articles/integrating-jira-with-your-projects/
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:18 PM: Juan Carlos asked: "Do I have to click Sync on the desktop client to see all remote changes?" That's correct Juan Carlos. Since Git is a distributed version control system, it means that you can sync when you have network and still work offline (with full history) when you aren't connected.  Sync pushes and pulls changes to sync them with GitHub.com or your GitHub Enterprise (on-premise) instance.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:19 PM: Srinivasan asked: "Is there a way to see how many things will be synced?" -> Yes. The button in GitHub for Mac and Windows should have a number on it if it has polled GitHub.com (every few minutes).  Otherwise, if you just sync, it'll sync even if the number doesn't show how many commits.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:22 PM: Parthiv asked: "Is Master a default branch?" -> Correct. Master is like "trunk" in Subversion. It is the default branch created on every new repo. It doesn't have any special priviledges, but is often considered the "shipping" copy of code. At GitHub Engineering, we try to keep the master branch able to build and pristine at all times.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:24 PM: For those of you that want to download Atom after class, just browse over to https://atom.io
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:29 PM: Gerhard asked: "Can a branch be used for versions like 1.2 and 1.3" -> Indeed they can. Branches typically represent a version of code – even a small maintenance release like 1.2.2.  Branches can also be more humanely named like "add-sales-demo-mode" and then merged into a numbered version branch.  Any branch can be merged into any other branch.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:30 PM: Rémi asked: "Do you fork on your local laptop?" -> Forking is done on the server side.  It's effectively a server-side copy of the entire repository to your personal account to allow you to safely make changes in a "sandbox"
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:31 PM: Sophia asked: "Who is handling pull requests?" -> Any of the collaborators (write access) on the destination of the pull request can merge it in.  Anyone who has read access can comment on the pull request.
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:34 PM: Dorian asked "Can you import a repository that is not visible on the Internet?" -> You can with a couple of tools.  If it is Subversion, you can use the `git svn clone --stdlayout <URL>` command - http://git-scm.com/docs/git-svn
+
+
+
+Matthew McCullough (to All - Entire Audience):
+1:35 PM: Continuing the response to Dorian regarding imports, there is also a CVS importing tool <http://git-scm.com/docs/git-cvsimport> and additional ones for ClearCase and Perforce.
+
+
+
+Q: pvcs aswell?
